@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'import_export',
+    'django_cleanup.apps.CleanupConfig',
+    'game',
+    'session',
 ]
 
 MIDDLEWARE = [
