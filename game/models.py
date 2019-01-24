@@ -27,7 +27,7 @@ class EffectClass(ImageMixin, models.Model):
     desc = models.TextField(help_text="설명", null=True, blank=True)
 
 
-class ConstructionCard(ImageMixin, models.Model):
+class ConstructionClass(ImageMixin, models.Model):
     number = models.ForeignKey('NumberClass', on_delete=models.CASCADE, help_text='카드 숫자')
     effect = models.ForeignKey('EffectClass', on_delete=models.CASCADE, help_text='카드 효과')
     count = models.PositiveSmallIntegerField(default=0, help_text="게임에 포함된 매수")
