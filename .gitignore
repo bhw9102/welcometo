@@ -424,4 +424,22 @@ modules.xml
 # Ignore all local history of files
 .history
 
-# End of https://www.gitignore.io/api/git,linux,macos,python,django,pycharm,pycharm+iml,pycharm+all,visualstudiocode
+
+# Created by https://www.gitignore.io/api/virtualenv
+# Edit at https://www.gitignore.io/?templates=virtualenv
+
+### VirtualEnv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+.venv
+pip-selfcheck.json
+
+# End of https://www.gitignore.io/api/virtualenv, git,linux,macos,python,django,pycharm,pycharm+iml,pycharm+all,visualstudiocode
