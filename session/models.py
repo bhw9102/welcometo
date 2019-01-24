@@ -21,11 +21,32 @@ class Session(CreatedUpdatedMixin, models.Model):
     title = models.CharField(max_length=32, help_text='세션 이름')
     current = models.PositiveSmallIntegerField(default=0, help_text='현재 턴')
 
+    def prepare_session(self):
+        # TODO: 이미 생성되어있을 경우 작동하지 않도록 한다.
+        # 카드를 생성한다.
+        prepare_session_card(self)
+        # 전체를 섞는다.
+        # 세개 덱으로 나눈다.
+        # 덱 별로 섞는다.
+
+
+def prepare_session_card(session: Session):
+    card_list = ConstructionClass.objects.all()
+    prepare_position = 0
+    order = 0
+    prepare_deck = list()
+    for card in card_list:
+        for i in range(0, card.count):
+            card = Construction.create(session=session, card=card, position=prepare_position, order=order)
+            prepare_deck.append(card)
+            order += 1
+
 
 DECK_POSITION = (
-    ('LEFT', 0),
-    ('CENTER', 1),
-    ('RIGHT', 2)
+    ('PREPARE', 0),
+    ('LEFT', 1),
+    ('CENTER', 2),
+    ('RIGHT', 3)
 )
 
 
@@ -35,5 +56,9 @@ class Construction(models.Model):
     position = models.PositiveSmallIntegerField(default=0, choices=DECK_POSITION, help_text='카드의 위치')
     order = models.PositiveSmallIntegerField(default=0, help_text='카드의 순서')
 
-
+    @classmethod
+    def create(cls, session, card, position, order):
+        obj = cls(session=session, card=card, position=position, order=order)
+        obj.save()
+        return obj
 
