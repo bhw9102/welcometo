@@ -8,7 +8,7 @@ def session_list(request):
     return render(request, 'session/session_list.html', {'session_list': Session.objects.all()})
 
 
-def current_construction(request, session_id):
+def current_constructions(request, session_id):
     # GET
     session = Session.objects.filter(pk=session_id).first()
     turn = session.current
