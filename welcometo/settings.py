@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'import_export',
     'django_cleanup.apps.CleanupConfig',
-    'rest_framework',
     'game',
     'session',
 ]
