@@ -1,0 +1,265 @@
+- model: game.numberclass
+  pk: 1
+  fields: {value: 1}
+- model: game.numberclass
+  pk: 2
+  fields: {value: 2}
+- model: game.numberclass
+  pk: 3
+  fields: {value: 3}
+- model: game.numberclass
+  pk: 4
+  fields: {value: 4}
+- model: game.numberclass
+  pk: 5
+  fields: {value: 5}
+- model: game.numberclass
+  pk: 6
+  fields: {value: 6}
+- model: game.numberclass
+  pk: 7
+  fields: {value: 7}
+- model: game.numberclass
+  pk: 8
+  fields: {value: 8}
+- model: game.numberclass
+  pk: 9
+  fields: {value: 9}
+- model: game.numberclass
+  pk: 10
+  fields: {value: 10}
+- model: game.numberclass
+  pk: 11
+  fields: {value: 11}
+- model: game.numberclass
+  pk: 12
+  fields: {value: 12}
+- model: game.numberclass
+  pk: 13
+  fields: {value: 13}
+- model: game.numberclass
+  pk: 14
+  fields: {value: 14}
+- model: game.numberclass
+  pk: 15
+  fields: {value: 15}
+- model: game.effectclass
+  pk: 1
+  fields: {image: '', title: "\uCE21\uB7C9\uC0AC", desc: "\uC6B8\uD0C0\uB9AC \uC9D3\
+      \uAE30"}
+- model: game.effectclass
+  pk: 2
+  fields: {image: '', title: "\uBD80\uB3D9\uC0B0 \uC911\uAC1C\uC778", desc: "\uC9D1\
+      \ \uAC12 \uC0C1\uC2B9"}
+- model: game.effectclass
+  pk: 3
+  fields: {image: '', title: "\uC870\uACBD\uC0AC", desc: "\uACF5\uC6D0"}
+- model: game.effectclass
+  pk: 4
+  fields: {image: '', title: "\uC218\uC601\uC7A5 \uC81C\uC791\uC790", desc: "\uC218\uC601\
+      \uC7A5"}
+- model: game.effectclass
+  pk: 5
+  fields: {image: '', title: "\uC784\uC2DC\uC9C1 \uC54C\uC120\uC18C", desc: "\uC778\uBD80\
+      \ \uACE0\uC6A9"}
+- model: game.effectclass
+  pk: 6
+  fields: {image: '', title: "\xABBis\xBB", desc: "Bis \uD6A8\uACFC"}
+- model: game.constructionclass
+  pk: 1
+  fields: {image: '', number: 1, effect: 1, count: 1}
+- model: game.constructionclass
+  pk: 2
+  fields: {image: '', number: 1, effect: 2, count: 1}
+- model: game.constructionclass
+  pk: 3
+  fields: {image: '', number: 1, effect: 3, count: 1}
+- model: game.constructionclass
+  pk: 4
+  fields: {image: '', number: 2, effect: 1, count: 1}
+- model: game.constructionclass
+  pk: 5
+  fields: {image: '', number: 2, effect: 2, count: 1}
+- model: game.constructionclass
+  pk: 6
+  fields: {image: '', number: 2, effect: 3, count: 1}
+- model: game.constructionclass
+  pk: 7
+  fields: {image: '', number: 3, effect: 1, count: 1}
+- model: game.constructionclass
+  pk: 8
+  fields: {image: '', number: 3, effect: 4, count: 1}
+- model: game.constructionclass
+  pk: 9
+  fields: {image: '', number: 3, effect: 5, count: 1}
+- model: game.constructionclass
+  pk: 10
+  fields: {image: '', number: 3, effect: 6, count: 1}
+- model: game.constructionclass
+  pk: 11
+  fields: {image: '', number: 4, effect: 2, count: 1}
+- model: game.constructionclass
+  pk: 12
+  fields: {image: '', number: 4, effect: 3, count: 1}
+- model: game.constructionclass
+  pk: 13
+  fields: {image: '', number: 4, effect: 4, count: 1}
+- model: game.constructionclass
+  pk: 14
+  fields: {image: '', number: 4, effect: 5, count: 1}
+- model: game.constructionclass
+  pk: 15
+  fields: {image: '', number: 4, effect: 6, count: 1}
+- model: game.constructionclass
+  pk: 16
+  fields: {image: '', number: 5, effect: 1, count: 2}
+- model: game.constructionclass
+  pk: 17
+  fields: {image: '', number: 5, effect: 2, count: 2}
+- model: game.constructionclass
+  pk: 18
+  fields: {image: '', number: 5, effect: 3, count: 2}
+- model: game.constructionclass
+  pk: 19
+  fields: {image: '', number: 6, effect: 1, count: 2}
+- model: game.constructionclass
+  pk: 20
+  fields: {image: '', number: 6, effect: 2, count: 1}
+- model: game.constructionclass
+  pk: 21
+  fields: {image: '', number: 6, effect: 3, count: 1}
+- model: game.constructionclass
+  pk: 22
+  fields: {image: '', number: 6, effect: 4, count: 1}
+- model: game.constructionclass
+  pk: 23
+  fields: {image: '', number: 6, effect: 5, count: 1}
+- model: game.constructionclass
+  pk: 24
+  fields: {image: '', number: 6, effect: 6, count: 1}
+- model: game.constructionclass
+  pk: 25
+  fields: {image: '', number: 7, effect: 1, count: 1}
+- model: game.constructionclass
+  pk: 26
+  fields: {image: '', number: 7, effect: 2, count: 2}
+- model: game.constructionclass
+  pk: 27
+  fields: {image: '', number: 7, effect: 3, count: 2}
+- model: game.constructionclass
+  pk: 28
+  fields: {image: '', number: 7, effect: 4, count: 1}
+- model: game.constructionclass
+  pk: 29
+  fields: {image: '', number: 7, effect: 5, count: 1}
+- model: game.constructionclass
+  pk: 30
+  fields: {image: '', number: 7, effect: 6, count: 1}
+- model: game.constructionclass
+  pk: 31
+  fields: {image: '', number: 8, effect: 1, count: 2}
+- model: game.constructionclass
+  pk: 32
+  fields: {image: '', number: 8, effect: 2, count: 2}
+- model: game.constructionclass
+  pk: 33
+  fields: {image: '', number: 8, effect: 3, count: 2}
+- model: game.constructionclass
+  pk: 34
+  fields: {image: '', number: 8, effect: 4, count: 1}
+- model: game.constructionclass
+  pk: 35
+  fields: {image: '', number: 8, effect: 5, count: 1}
+- model: game.constructionclass
+  pk: 36
+  fields: {image: '', number: 8, effect: 6, count: 1}
+- model: game.constructionclass
+  pk: 37
+  fields: {image: '', number: 9, effect: 1, count: 1}
+- model: game.constructionclass
+  pk: 38
+  fields: {image: '', number: 9, effect: 2, count: 2}
+- model: game.constructionclass
+  pk: 39
+  fields: {image: '', number: 9, effect: 3, count: 2}
+- model: game.constructionclass
+  pk: 40
+  fields: {image: '', number: 9, effect: 4, count: 1}
+- model: game.constructionclass
+  pk: 41
+  fields: {image: '', number: 9, effect: 5, count: 1}
+- model: game.constructionclass
+  pk: 42
+  fields: {image: '', number: 9, effect: 6, count: 1}
+- model: game.constructionclass
+  pk: 43
+  fields: {image: '', number: 10, effect: 1, count: 2}
+- model: game.constructionclass
+  pk: 44
+  fields: {image: '', number: 10, effect: 2, count: 1}
+- model: game.constructionclass
+  pk: 45
+  fields: {image: '', number: 10, effect: 3, count: 1}
+- model: game.constructionclass
+  pk: 46
+  fields: {image: '', number: 10, effect: 4, count: 1}
+- model: game.constructionclass
+  pk: 47
+  fields: {image: '', number: 10, effect: 5, count: 1}
+- model: game.constructionclass
+  pk: 48
+  fields: {image: '', number: 10, effect: 6, count: 1}
+- model: game.constructionclass
+  pk: 49
+  fields: {image: '', number: 11, effect: 1, count: 2}
+- model: game.constructionclass
+  pk: 50
+  fields: {image: '', number: 11, effect: 2, count: 2}
+- model: game.constructionclass
+  pk: 51
+  fields: {image: '', number: 11, effect: 3, count: 2}
+- model: game.constructionclass
+  pk: 52
+  fields: {image: '', number: 12, effect: 2, count: 1}
+- model: game.constructionclass
+  pk: 53
+  fields: {image: '', number: 12, effect: 3, count: 1}
+- model: game.constructionclass
+  pk: 54
+  fields: {image: '', number: 12, effect: 4, count: 1}
+- model: game.constructionclass
+  pk: 55
+  fields: {image: '', number: 12, effect: 5, count: 1}
+- model: game.constructionclass
+  pk: 56
+  fields: {image: '', number: 12, effect: 6, count: 1}
+- model: game.constructionclass
+  pk: 57
+  fields: {image: '', number: 13, effect: 1, count: 1}
+- model: game.constructionclass
+  pk: 58
+  fields: {image: '', number: 13, effect: 4, count: 1}
+- model: game.constructionclass
+  pk: 59
+  fields: {image: '', number: 13, effect: 5, count: 1}
+- model: game.constructionclass
+  pk: 60
+  fields: {image: '', number: 13, effect: 6, count: 1}
+- model: game.constructionclass
+  pk: 61
+  fields: {image: '', number: 14, effect: 1, count: 1}
+- model: game.constructionclass
+  pk: 62
+  fields: {image: '', number: 14, effect: 2, count: 1}
+- model: game.constructionclass
+  pk: 63
+  fields: {image: '', number: 14, effect: 3, count: 1}
+- model: game.constructionclass
+  pk: 64
+  fields: {image: '', number: 15, effect: 1, count: 1}
+- model: game.constructionclass
+  pk: 65
+  fields: {image: '', number: 15, effect: 2, count: 1}
+- model: game.constructionclass
+  pk: 66
+  fields: {image: '', number: 15, effect: 3, count: 1}
