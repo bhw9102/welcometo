@@ -1,0 +1,20 @@
+{% extends './_base.html' %}
+{% load static %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+  <div>턴 : {{ turn }}</div>
+  <div class="grid-container">
+    <div>{{ left_num.card.number.value }}</div>
+    <div>{{ center_num.card.number.value }}</div>
+    <div>{{ right_num.card.number.value }}</div>
+    <div>{{ left_effect.card.effect.title }}</div>
+    <div>{{ center_effect.card.effect.title }}</div>
+    <div>{{ right_effect.card.effect.title }}</div>
+  </div>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}
