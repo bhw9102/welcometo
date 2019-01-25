@@ -1,0 +1,12 @@
+PREPARE = 0
+LEFT = 1
+CENTER = 2
+RIGHT = 3
+
+POSITION = (
+    ('PREPARE', PREPARE),
+    ('LEFT', LEFT),
+    ('CENTER', CENTER),
+    ('RIGHT', RIGHT)
+)
+
