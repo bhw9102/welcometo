@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 from django.views.generic import RedirectView
 
 urlpatterns = [
+    path('', RedirectView.as_view(url='session/', permanent=False), name='redirect_session'),
     path('admin/', admin.site.urls),
     path('session/', include('session.urls')),
 ]
