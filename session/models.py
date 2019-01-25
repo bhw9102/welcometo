@@ -2,6 +2,7 @@ import datetime
 from django.db import models
 import random
 from game.models import ConstructionClass
+from session import position
 
 
 class CreatedUpdatedMixin(models.Model):
@@ -68,44 +69,31 @@ def prepare_dividing_deck(deck: list):
 
 
 def print_deck_list(session: Session):
-    deck = Construction.objects.filter(session=session, position=pos_left).order_by('order').all()
+    deck = Construction.objects.filter(session=session, position=position.LEFT).order_by('order').all()
     print("왼쪽 카드 뭉치")
     for card in deck:
         print(card.__str__())
-    deck = Construction.objects.filter(session=session, position=pos_center).order_by('order').all()
+    deck = Construction.objects.filter(session=session, position=position.CENTER).order_by('order').all()
     print("중앙 카드 뭉치")
     for card in deck:
         print(card.__str__())
-    deck = Construction.objects.filter(session=session, position=pos_right).order_by('order').all()
+    deck = Construction.objects.filter(session=session, position=position.RIGHT).order_by('order').all()
     for card in deck:
         print(card.__str__())
-
-
-pos_prepare = 0
-pos_left = 1
-pos_center = 2
-pos_right = 3
-
-DECK_POSITION = (
-    ('PREPARE', pos_prepare),
-    ('LEFT', pos_left),
-    ('CENTER', pos_center),
-    ('RIGHT', pos_right)
-)
 
 
 class Construction(models.Model):
     session = models.ForeignKey('Session', on_delete=models.CASCADE)
     card = models.ForeignKey('game.ConstructionClass', on_delete=models.CASCADE)
-    position = models.PositiveSmallIntegerField(default=0, choices=DECK_POSITION, help_text='카드의 위치')
+    position = models.PositiveSmallIntegerField(default=0, choices=position.POSITION, help_text='카드의 위치')
     order = models.PositiveSmallIntegerField(default=0, help_text='카드의 순서')
 
     @classmethod
-    def create(cls, session, card, position, order):
-        obj = cls(session=session, card=card, position=position, order=order)
+    def create(cls, session, card, pos, order):
+        obj = cls(session=session, card=card, position=pos, order=order)
         obj.save()
         return obj
 
     def __str__(self):
-        return "{position}-order:{order}-{card}".format(position=DECK_POSITION[self.position][0], card=self.card, order=self.order)
+        return "{position}-order:{order}-{card}".format(position=position.POSITION[self.position][0], card=self.card, order=self.order)
 
