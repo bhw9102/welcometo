@@ -3,6 +3,11 @@ from session.models import Session, Construction, print_deck_list
 from session import position
 
 
+def session_list(request):
+    #GET
+    return render(request, 'session/session_list.html', {'session_list': Session.objects.all()})
+
+
 def current_construction(request, session_id):
     # GET
     session = Session.objects.filter(pk=session_id).first()
