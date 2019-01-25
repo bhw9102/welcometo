@@ -62,3 +62,6 @@ class Construction(models.Model):
         obj.save()
         return obj
 
+    def __str__(self):
+        return "{position}-order:{order}-{card}".format(position=DECK_POSITION[self.position][0], card=self.card, order=self.order)
+
