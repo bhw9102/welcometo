@@ -42,7 +42,7 @@ def prepare_creating_card(session: Session):
     prepare_deck = list()
     for card_class in card_list:
         for i in range(0, card_class.count):
-            card = Construction.create(session=session, card=card_class, position=prepare_position, order=order)
+            card = Construction.create(session=session, card=card_class, pos=prepare_position, order=order)
             prepare_deck.append(card)
             order += 1
     return prepare_deck
