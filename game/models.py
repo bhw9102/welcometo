@@ -32,6 +32,10 @@ class EffectClass(ImageMixin, models.Model):
     def __str__(self):
         return self.title
 
+    @property
+    def name(self):
+        return self.title
+
 
 class ConstructionClass(ImageMixin, models.Model):
     number = models.ForeignKey('NumberClass', on_delete=models.CASCADE, help_text='카드 숫자')
@@ -39,6 +43,10 @@ class ConstructionClass(ImageMixin, models.Model):
     count = models.PositiveSmallIntegerField(default=0, help_text="게임에 포함된 매수")
 
     def __str__(self):
-        return "{effect}-num:{number}".format(effect=self.effect, number=self.number)
+        return "num:{number}-{effect}".format(effect=self.effect, number=self.number)
+
+    @property
+    def name(self):
+        return self.__str__
 
 
