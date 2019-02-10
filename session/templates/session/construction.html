@@ -7,12 +7,12 @@
 {% block body %}
   <div>턴 : {{ turn }}</div>
   <div class="grid-container">
-    <div>{{ left_num.card.number.value }}<img src="{% static left_num.card.image.url %}"/></div>
-    <div>{{ center_num.card.number.value }}</div>
-    <div>{{ right_num.card.number.value }}</div>
-    <div>{{ left_effect.card.effect.title }}</div>
-    <div>{{ center_effect.card.effect.title }}</div>
-    <div>{{ right_effect.card.effect.title }}</div>
+    <img src="{{ left_num.card.image.url }}"/>
+    <img src="{{ center_num.card.image.url }}"/>
+    <img src="{{ right_num.card.image.url }}"/>
+    <img src="{{ left_effect.card.effect.image.url }}"/>
+    <img src="{{ center_effect.card.effect.image.url }}"/>
+    <img src="{{ right_effect.card.effect.image.url }}"/>
   </div>
 {% endblock %}
 
