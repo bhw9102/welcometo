@@ -45,221 +45,279 @@
   fields: {value: 15}
 - model: game.effectclass
   pk: 1
-  fields: {image: '', title: "\uCE21\uB7C9\uC0AC", desc: "\uC6B8\uD0C0\uB9AC \uC9D3\
-      \uAE30"}
+  fields: {image: "EffectClass/\uCE21\uB7C9\uC0AC.jpg", title: "\uCE21\uB7C9\uC0AC",
+    desc: "\uC6B8\uD0C0\uB9AC \uC9D3\uAE30"}
 - model: game.effectclass
   pk: 2
-  fields: {image: '', title: "\uBD80\uB3D9\uC0B0 \uC911\uAC1C\uC778", desc: "\uC9D1\
-      \ \uAC12 \uC0C1\uC2B9"}
+  fields: {image: "EffectClass/\uBD80\uB3D9\uC0B0_\uC911\uAC1C\uC778.jpg", title: "\uBD80\uB3D9\
+      \uC0B0 \uC911\uAC1C\uC778", desc: "\uC9D1 \uAC12 \uC0C1\uC2B9"}
 - model: game.effectclass
   pk: 3
-  fields: {image: '', title: "\uC870\uACBD\uC0AC", desc: "\uACF5\uC6D0"}
+  fields: {image: "EffectClass/\uC870\uACBD\uC0AC.jpg", title: "\uC870\uACBD\uC0AC",
+    desc: "\uACF5\uC6D0"}
 - model: game.effectclass
   pk: 4
-  fields: {image: '', title: "\uC218\uC601\uC7A5 \uC81C\uC791\uC790", desc: "\uC218\uC601\
-      \uC7A5"}
+  fields: {image: "EffectClass/\uC218\uC601\uC7A5_\uC81C\uC791\uC790.jpg", title: "\uC218\uC601\
+      \uC7A5 \uC81C\uC791\uC790", desc: "\uC218\uC601\uC7A5"}
 - model: game.effectclass
   pk: 5
-  fields: {image: '', title: "\uC784\uC2DC\uC9C1 \uC54C\uC120\uC18C", desc: "\uC778\uBD80\
-      \ \uACE0\uC6A9"}
+  fields: {image: "EffectClass/\uC784\uC2DC\uC9C1_\uC54C\uC120\uC18C.jpg", title: "\uC784\uC2DC\
+      \uC9C1 \uC54C\uC120\uC18C", desc: "\uC778\uBD80 \uACE0\uC6A9"}
 - model: game.effectclass
   pk: 6
-  fields: {image: '', title: "\xABBis\xBB", desc: "Bis \uD6A8\uACFC"}
+  fields: {image: EffectClass/Bis.jpg, title: "\xABBis\xBB", desc: "Bis \uD6A8\uACFC"}
 - model: game.constructionclass
   pk: 1
-  fields: {image: '', number: 1, effect: 1, count: 1}
+  fields: {image: "ConstructionClass/num1-\u110E\u1173\u11A8\u1105\u1163\u11BC\u1109\
+      \u1161.jpg", number: 1, effect: 1, count: 1}
 - model: game.constructionclass
   pk: 2
-  fields: {image: '', number: 1, effect: 2, count: 1}
+  fields: {image: "ConstructionClass/num1-\uBD80\uB3D9\uC0B0_\uC911\uAC1C\uC778.jpg",
+    number: 1, effect: 2, count: 1}
 - model: game.constructionclass
   pk: 3
-  fields: {image: '', number: 1, effect: 3, count: 1}
+  fields: {image: "ConstructionClass/num1-\uC870\uACBD\uC0AC.jpg", number: 1, effect: 3,
+    count: 1}
 - model: game.constructionclass
   pk: 4
-  fields: {image: '', number: 2, effect: 1, count: 1}
+  fields: {image: "ConstructionClass/num2-\uCE21\uB7C9\uC0AC.jpg", number: 2, effect: 1,
+    count: 1}
 - model: game.constructionclass
   pk: 5
-  fields: {image: '', number: 2, effect: 2, count: 1}
+  fields: {image: "ConstructionClass/num2-\uBD80\uB3D9\uC0B0_\uC911\uAC1C\uC778.jpg",
+    number: 2, effect: 2, count: 1}
 - model: game.constructionclass
   pk: 6
-  fields: {image: '', number: 2, effect: 3, count: 1}
+  fields: {image: "ConstructionClass/num2-\uC870\uACBD\uC0AC.jpg", number: 2, effect: 3,
+    count: 1}
 - model: game.constructionclass
   pk: 7
-  fields: {image: '', number: 3, effect: 1, count: 1}
+  fields: {image: "ConstructionClass/num3-\uCE21\uB7C9\uC0AC.jpg", number: 3, effect: 1,
+    count: 1}
 - model: game.constructionclass
   pk: 8
-  fields: {image: '', number: 3, effect: 4, count: 1}
+  fields: {image: "ConstructionClass/num3-\uC218\uC601\uC7A5_\uC81C\uC791\uC790.jpg",
+    number: 3, effect: 4, count: 1}
 - model: game.constructionclass
   pk: 9
-  fields: {image: '', number: 3, effect: 5, count: 1}
+  fields: {image: "ConstructionClass/num3-\uC784\uC2DC\uC9C1_\uC54C\uC120\uC18C.jpg",
+    number: 3, effect: 5, count: 1}
 - model: game.constructionclass
   pk: 10
-  fields: {image: '', number: 3, effect: 6, count: 1}
+  fields: {image: ConstructionClass/num3-Bis.jpg, number: 3, effect: 6, count: 1}
 - model: game.constructionclass
   pk: 11
-  fields: {image: '', number: 4, effect: 2, count: 1}
+  fields: {image: "ConstructionClass/num4-\uBD80\uB3D9\uC0B0_\uC911\uAC1C\uC778.jpg",
+    number: 4, effect: 2, count: 1}
 - model: game.constructionclass
   pk: 12
-  fields: {image: '', number: 4, effect: 3, count: 1}
+  fields: {image: "ConstructionClass/num4-\uC870\uACBD\uC0AC.jpg", number: 4, effect: 3,
+    count: 1}
 - model: game.constructionclass
   pk: 13
-  fields: {image: '', number: 4, effect: 4, count: 1}
+  fields: {image: "ConstructionClass/num4-\uC218\uC601\uC7A5_\uC81C\uC791\uC790.jpg",
+    number: 4, effect: 4, count: 1}
 - model: game.constructionclass
   pk: 14
-  fields: {image: '', number: 4, effect: 5, count: 1}
+  fields: {image: "ConstructionClass/num4-\uC784\uC2DC\uC9C1_\uC54C\uC120\uC18C.jpg",
+    number: 4, effect: 5, count: 1}
 - model: game.constructionclass
   pk: 15
-  fields: {image: '', number: 4, effect: 6, count: 1}
+  fields: {image: ConstructionClass/num4-Bis.jpg, number: 4, effect: 6, count: 1}
 - model: game.constructionclass
   pk: 16
-  fields: {image: '', number: 5, effect: 1, count: 2}
+  fields: {image: "ConstructionClass/num5-\uCE21\uB7C9\uC0AC.jpg", number: 5, effect: 1,
+    count: 2}
 - model: game.constructionclass
   pk: 17
-  fields: {image: '', number: 5, effect: 2, count: 2}
+  fields: {image: "ConstructionClass/num5-\uBD80\uB3D9\uC0B0_\uC911\uAC1C\uC778.jpg",
+    number: 5, effect: 2, count: 2}
 - model: game.constructionclass
   pk: 18
-  fields: {image: '', number: 5, effect: 3, count: 2}
+  fields: {image: "ConstructionClass/num5-\uC870\uACBD\uC0AC.jpg", number: 5, effect: 3,
+    count: 2}
 - model: game.constructionclass
   pk: 19
-  fields: {image: '', number: 6, effect: 1, count: 2}
+  fields: {image: "ConstructionClass/num6-\uCE21\uB7C9\uC0AC.jpg", number: 6, effect: 1,
+    count: 2}
 - model: game.constructionclass
   pk: 20
-  fields: {image: '', number: 6, effect: 2, count: 1}
+  fields: {image: "ConstructionClass/num6-\uBD80\uB3D9\uC0B0_\uC911\uAC1C\uC778.jpg",
+    number: 6, effect: 2, count: 1}
 - model: game.constructionclass
   pk: 21
-  fields: {image: '', number: 6, effect: 3, count: 1}
+  fields: {image: "ConstructionClass/num6-\uC870\uACBD\uC0AC.jpg", number: 6, effect: 3,
+    count: 1}
 - model: game.constructionclass
   pk: 22
-  fields: {image: '', number: 6, effect: 4, count: 1}
+  fields: {image: "ConstructionClass/num6-\uC218\uC601\uC7A5_\uC81C\uC791\uC790.jpg",
+    number: 6, effect: 4, count: 1}
 - model: game.constructionclass
   pk: 23
-  fields: {image: '', number: 6, effect: 5, count: 1}
+  fields: {image: "ConstructionClass/num6-\uC784\uC2DC\uC9C1_\uC54C\uC120\uC18C.jpg",
+    number: 6, effect: 5, count: 1}
 - model: game.constructionclass
   pk: 24
-  fields: {image: '', number: 6, effect: 6, count: 1}
+  fields: {image: ConstructionClass/num6-Bis.jpg, number: 6, effect: 6, count: 1}
 - model: game.constructionclass
   pk: 25
-  fields: {image: '', number: 7, effect: 1, count: 1}
+  fields: {image: "ConstructionClass/num7-\uCE21\uB7C9\uC0AC.jpg", number: 7, effect: 1,
+    count: 1}
 - model: game.constructionclass
   pk: 26
-  fields: {image: '', number: 7, effect: 2, count: 2}
+  fields: {image: "ConstructionClass/num7-\uBD80\uB3D9\uC0B0_\uC911\uAC1C\uC778.jpg",
+    number: 7, effect: 2, count: 2}
 - model: game.constructionclass
   pk: 27
-  fields: {image: '', number: 7, effect: 3, count: 2}
+  fields: {image: "ConstructionClass/num7-\uC870\uACBD\uC0AC.jpg", number: 7, effect: 3,
+    count: 2}
 - model: game.constructionclass
   pk: 28
-  fields: {image: '', number: 7, effect: 4, count: 1}
+  fields: {image: "ConstructionClass/num7-\uC218\uC601\uC7A5_\uC81C\uC791\uC790.jpg",
+    number: 7, effect: 4, count: 1}
 - model: game.constructionclass
   pk: 29
-  fields: {image: '', number: 7, effect: 5, count: 1}
+  fields: {image: "ConstructionClass/num7-\uC784\uC2DC\uC9C1_\uC54C\uC120\uC18C.jpg",
+    number: 7, effect: 5, count: 1}
 - model: game.constructionclass
   pk: 30
-  fields: {image: '', number: 7, effect: 6, count: 1}
+  fields: {image: ConstructionClass/num7-Bis.jpg, number: 7, effect: 6, count: 1}
 - model: game.constructionclass
   pk: 31
-  fields: {image: '', number: 8, effect: 1, count: 2}
+  fields: {image: "ConstructionClass/num8-\uCE21\uB7C9\uC0AC.jpg", number: 8, effect: 1,
+    count: 2}
 - model: game.constructionclass
   pk: 32
-  fields: {image: '', number: 8, effect: 2, count: 2}
+  fields: {image: "ConstructionClass/num8-\uBD80\uB3D9\uC0B0_\uC911\uAC1C\uC778.jpg",
+    number: 8, effect: 2, count: 2}
 - model: game.constructionclass
   pk: 33
-  fields: {image: '', number: 8, effect: 3, count: 2}
+  fields: {image: "ConstructionClass/num8-\uC870\uACBD\uC0AC.jpg", number: 8, effect: 3,
+    count: 2}
 - model: game.constructionclass
   pk: 34
-  fields: {image: '', number: 8, effect: 4, count: 1}
+  fields: {image: "ConstructionClass/num8-\uC218\uC601\uC7A5_\uC81C\uC791\uC790.jpg",
+    number: 8, effect: 4, count: 1}
 - model: game.constructionclass
   pk: 35
-  fields: {image: '', number: 8, effect: 5, count: 1}
+  fields: {image: "ConstructionClass/num8-\uC784\uC2DC\uC9C1_\uC54C\uC120\uC18C.jpg",
+    number: 8, effect: 5, count: 1}
 - model: game.constructionclass
   pk: 36
-  fields: {image: '', number: 8, effect: 6, count: 1}
+  fields: {image: ConstructionClass/num8-Bis.jpg, number: 8, effect: 6, count: 1}
 - model: game.constructionclass
   pk: 37
-  fields: {image: '', number: 9, effect: 1, count: 1}
+  fields: {image: "ConstructionClass/num9-\uCE21\uB7C9\uC0AC.jpg", number: 9, effect: 1,
+    count: 1}
 - model: game.constructionclass
   pk: 38
-  fields: {image: '', number: 9, effect: 2, count: 2}
+  fields: {image: "ConstructionClass/num9-\uBD80\uB3D9\uC0B0_\uC911\uAC1C\uC778.jpg",
+    number: 9, effect: 2, count: 2}
 - model: game.constructionclass
   pk: 39
-  fields: {image: '', number: 9, effect: 3, count: 2}
+  fields: {image: "ConstructionClass/num9-\uC870\uACBD\uC0AC.jpg", number: 9, effect: 3,
+    count: 2}
 - model: game.constructionclass
   pk: 40
-  fields: {image: '', number: 9, effect: 4, count: 1}
+  fields: {image: "ConstructionClass/num9-\uC218\uC601\uC7A5_\uC81C\uC791\uC790.jpg",
+    number: 9, effect: 4, count: 1}
 - model: game.constructionclass
   pk: 41
-  fields: {image: '', number: 9, effect: 5, count: 1}
+  fields: {image: "ConstructionClass/num9-\uC784\uC2DC\uC9C1_\uC54C\uC120\uC18C.jpg",
+    number: 9, effect: 5, count: 1}
 - model: game.constructionclass
   pk: 42
-  fields: {image: '', number: 9, effect: 6, count: 1}
+  fields: {image: ConstructionClass/num9-Bis.jpg, number: 9, effect: 6, count: 1}
 - model: game.constructionclass
   pk: 43
-  fields: {image: '', number: 10, effect: 1, count: 2}
+  fields: {image: "ConstructionClass/num10-\uCE21\uB7C9\uC0AC.jpg", number: 10, effect: 1,
+    count: 2}
 - model: game.constructionclass
   pk: 44
-  fields: {image: '', number: 10, effect: 2, count: 1}
+  fields: {image: "ConstructionClass/num10-\uBD80\uB3D9\uC0B0_\uC911\uAC1C\uC778.jpg",
+    number: 10, effect: 2, count: 1}
 - model: game.constructionclass
   pk: 45
-  fields: {image: '', number: 10, effect: 3, count: 1}
+  fields: {image: "ConstructionClass/num10-\uC870\uACBD\uC0AC.jpg", number: 10, effect: 3,
+    count: 1}
 - model: game.constructionclass
   pk: 46
-  fields: {image: '', number: 10, effect: 4, count: 1}
+  fields: {image: "ConstructionClass/num10-\uC218\uC601\uC7A5_\uC81C\uC791\uC790.jpg",
+    number: 10, effect: 4, count: 1}
 - model: game.constructionclass
   pk: 47
-  fields: {image: '', number: 10, effect: 5, count: 1}
+  fields: {image: "ConstructionClass/num10-\uC784\uC2DC\uC9C1_\uC54C\uC120\uC18C.jpg",
+    number: 10, effect: 5, count: 1}
 - model: game.constructionclass
   pk: 48
-  fields: {image: '', number: 10, effect: 6, count: 1}
+  fields: {image: ConstructionClass/num10-Bis.jpg, number: 10, effect: 6, count: 1}
 - model: game.constructionclass
   pk: 49
-  fields: {image: '', number: 11, effect: 1, count: 2}
+  fields: {image: "ConstructionClass/num11-\uCE21\uB7C9\uC0AC.jpg", number: 11, effect: 1,
+    count: 2}
 - model: game.constructionclass
   pk: 50
-  fields: {image: '', number: 11, effect: 2, count: 2}
+  fields: {image: "ConstructionClass/num11-\uBD80\uB3D9\uC0B0_\uC911\uAC1C\uC778.jpg",
+    number: 11, effect: 2, count: 2}
 - model: game.constructionclass
   pk: 51
-  fields: {image: '', number: 11, effect: 3, count: 2}
+  fields: {image: "ConstructionClass/num11-\uC870\uACBD\uC0AC.jpg", number: 11, effect: 3,
+    count: 2}
 - model: game.constructionclass
   pk: 52
-  fields: {image: '', number: 12, effect: 2, count: 1}
+  fields: {image: "ConstructionClass/num12-\uBD80\uB3D9\uC0B0_\uC911\uAC1C\uC778.jpg",
+    number: 12, effect: 2, count: 1}
 - model: game.constructionclass
   pk: 53
-  fields: {image: '', number: 12, effect: 3, count: 1}
+  fields: {image: "ConstructionClass/num12-\uC870\uACBD\uC0AC.jpg", number: 12, effect: 3,
+    count: 1}
 - model: game.constructionclass
   pk: 54
-  fields: {image: '', number: 12, effect: 4, count: 1}
+  fields: {image: "ConstructionClass/num12-\uC218\uC601\uC7A5_\uC81C\uC791\uC790.jpg",
+    number: 12, effect: 4, count: 1}
 - model: game.constructionclass
   pk: 55
-  fields: {image: '', number: 12, effect: 5, count: 1}
+  fields: {image: "ConstructionClass/num12-\uC784\uC2DC\uC9C1_\uC54C\uC120\uC18C.jpg",
+    number: 12, effect: 5, count: 1}
 - model: game.constructionclass
   pk: 56
-  fields: {image: '', number: 12, effect: 6, count: 1}
+  fields: {image: ConstructionClass/num12-Bis.jpg, number: 12, effect: 6, count: 1}
 - model: game.constructionclass
   pk: 57
-  fields: {image: '', number: 13, effect: 1, count: 1}
+  fields: {image: "ConstructionClass/num13-\uCE21\uB7C9\uC0AC.jpg", number: 13, effect: 1,
+    count: 1}
 - model: game.constructionclass
   pk: 58
-  fields: {image: '', number: 13, effect: 4, count: 1}
+  fields: {image: "ConstructionClass/num13-\uC218\uC601\uC7A5_\uC81C\uC791\uC790.jpg",
+    number: 13, effect: 4, count: 1}
 - model: game.constructionclass
   pk: 59
-  fields: {image: '', number: 13, effect: 5, count: 1}
+  fields: {image: "ConstructionClass/num13-\uC784\uC2DC\uC9C1_\uC54C\uC120\uC18C.jpg",
+    number: 13, effect: 5, count: 1}
 - model: game.constructionclass
   pk: 60
-  fields: {image: '', number: 13, effect: 6, count: 1}
+  fields: {image: ConstructionClass/num13-Bis.jpg, number: 13, effect: 6, count: 1}
 - model: game.constructionclass
   pk: 61
-  fields: {image: '', number: 14, effect: 1, count: 1}
+  fields: {image: "ConstructionClass/num14-\uCE21\uB7C9\uC0AC.jpg", number: 14, effect: 1,
+    count: 1}
 - model: game.constructionclass
   pk: 62
-  fields: {image: '', number: 14, effect: 2, count: 1}
+  fields: {image: "ConstructionClass/num14-\uBD80\uB3D9\uC0B0_\uC911\uAC1C\uC778.jpg",
+    number: 14, effect: 2, count: 1}
 - model: game.constructionclass
   pk: 63
-  fields: {image: '', number: 14, effect: 3, count: 1}
+  fields: {image: "ConstructionClass/num14-\uC870\uACBD\uC0AC.jpg", number: 14, effect: 3,
+    count: 1}
 - model: game.constructionclass
   pk: 64
-  fields: {image: '', number: 15, effect: 1, count: 1}
+  fields: {image: "ConstructionClass/num15-\uCE21\uB7C9\uC0AC.jpg", number: 15, effect: 1,
+    count: 1}
 - model: game.constructionclass
   pk: 65
-  fields: {image: '', number: 15, effect: 2, count: 1}
+  fields: {image: "ConstructionClass/num15-\uBD80\uB3D9\uC0B0_\uC911\uAC1C\uC778.jpg",
+    number: 15, effect: 2, count: 1}
 - model: game.constructionclass
   pk: 66
-  fields: {image: '', number: 15, effect: 3, count: 1}
+  fields: {image: "ConstructionClass/num15-\uC870\uACBD\uC0AC.jpg", number: 15, effect: 3,
+    count: 1}

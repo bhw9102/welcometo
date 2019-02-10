@@ -6,16 +6,10 @@ from game.tools import combine_file_path
 
 
 class ImageMixin(models.Model):
-    image = models.ImageField(blank=True, null=True, default=None, upload_to=partial(combine_file_path))
+    image = models.ImageField(blank=True, null=True, default=None, upload_to=combine_file_path)
 
     class Meta:
         abstract = True
-
-    def image_url(self):
-        if bool(self.image):
-            return MEDIA_URL + self.image.url
-        else:
-            return 'about:blank'
 
 
 class NumberClass(models.Model):
@@ -26,7 +20,7 @@ class NumberClass(models.Model):
 
 
 class EffectClass(ImageMixin, models.Model):
-    title = models.CharField(max_length=32, unique=True, help_text="효과명")
+    title = models.CharField(max_length=32, unique=True, help_text='효과명')
     desc = models.TextField(help_text="설명", null=True, blank=True)
 
     def __str__(self):
@@ -47,6 +41,6 @@ class ConstructionClass(ImageMixin, models.Model):
 
     @property
     def name(self):
-        return self.__str__
+        return self.__str__()
 
 

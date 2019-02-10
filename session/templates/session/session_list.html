@@ -10,6 +10,7 @@
       <li><a href="{% url 'current_constructions' session_id=session.id %}">{{ session.title }}</a></li>
     {% endfor %}
   </ul>
+  {#  <div><img src="{{ test.image.url }}" /></div>#}
 {% endblock %}
 
 {% block javascript %}

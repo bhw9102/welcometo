@@ -1,10 +1,13 @@
 from django.shortcuts import render
 from session.models import Session, Construction, print_deck_list
+from game.models import EffectClass, ConstructionClass
 from session import position
 
 
 def session_list(request):
     #GET
+    # test = ConstructionClass.objects.filter(pk=3).first()
+    # print(test)
     return render(request, 'session/session_list.html', {'session_list': Session.objects.all()})
 
 
