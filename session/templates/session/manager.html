@@ -5,6 +5,16 @@
 {% endblock %}
 
 {% block body %}
+  <body>
+    <div>세션 번호 : {{ session.id }}</div>
+    <div>현재 턴 : {{ session.current }}</div>
+    <form action="increase" method="POST">
+      {% csrf_token %}
+      <input type="submit" style="width:20vw; height: 20vw;" value="다음 턴"></form>
+    <form action="decrease" method="POST">
+      {% csrf_token %}
+      <input type="submit" style="width:20vw; height: 20vw;" value="이전 턴"></form>
+  </body>
 {% endblock %}
 
 {% block javascript %}

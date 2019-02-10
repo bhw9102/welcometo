@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from session.models import Session, Construction, print_deck_list
-from game.models import EffectClass, ConstructionClass
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+from session.models import Session, Construction
 from session import position
 
 
@@ -8,7 +9,7 @@ def session_list(request):
     #GET
     # test = ConstructionClass.objects.filter(pk=3).first()
     # print(test)
-    return render(request, 'session/session_list.html', {'session_list': Session.objects.all()})
+    return render(request, 'session/session_list.html', dict(session_list=Session.objects.all()))
 
 
 def current_constructions(request, session_id):
@@ -41,5 +42,22 @@ def open_constructions(session, turn):
                       left_effect=left_effect, center_effect=center_effect, right_effect=right_effect)
     # print(open_cards)
     return open_cards
+
+
+def manager(request, session_id):
+    # GET
+    session = Session.objects.filter(pk=session_id).first()
+    return render(request, 'session/manager.html', dict(session=session))
+
+
+def change_turn(request, session_id, action):
+    print(request)
+    session = Session.objects.filter(pk=session_id).first()
+    if action == 'increase':
+        session.current += 1
+    elif action == 'decrease':
+        session.current -= 1
+    session.save()
+    return HttpResponseRedirect(reverse('manager', kwargs=dict(session_id=session_id)))
 
 
