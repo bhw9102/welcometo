@@ -10,10 +10,8 @@ def combine_file_path(instance, filename):
 
 
 def combine_filename_format(instance, filename):
-    now = datetime.datetime.now()
     return "{name}{extension}".format(
         name=instance.name,
-        now=str(now.date()),
         extension=os.path.splitext(filename)[1],
     )
 
