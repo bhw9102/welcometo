@@ -8,12 +8,28 @@
   <body style="height: 100vh;">
     <div>턴 : {{ turn }}</div>
     <div class="grid-container">
-      <img style="height: 40vh;" src="{{ left_num.card.image.url }}"/>
-      <img style="height: 40vh;" src="{{ center_num.card.image.url }}"/>
-      <img style="height: 40vh;" src="{{ right_num.card.image.url }}"/>
-      <img style="height: 40vh;" src="{{ left_effect.card.effect.image.url }}"/>
-      <img style="height: 40vh;" src="{{ center_effect.card.effect.image.url }}"/>
-      <img style="height: 40vh;" src="{{ right_effect.card.effect.image.url }}"/>
+      <div>
+        <div>{{ left_num.card.number }}</div>
+        <img style="height: 40vh;" src="{{ left_num.card.image.url }}"/>
+      </div>
+      <div>
+        <div>{{ center_num.card.number }}</div>
+        <img style="height: 40vh;" src="{{ center_num.card.image.url }}"/></div>
+      <div>
+        <div>{{ right_num.card.number }}</div>
+        <img style="height: 40vh;" src="{{ right_num.card.image.url }}"/>
+      </div>
+      <div>
+        <div>{{ left_effect.card.effect }}</div>
+        <img style="height: 40vh;" src="{{ left_effect.card.effect.image.url }}"/>
+      </div>
+      <div>
+        <div>{{ center_effect.card.effect }}</div>
+        <img style="height: 40vh;" src="{{ center_effect.card.effect.image.url }}"/>
+      </div>
+      <div><div>{{ right_effect.card.effect }}</div>
+        <img style="height: 40vh;" src="{{ right_effect.card.effect.image.url }}"/
+      </div>
     </div>
   </body>
 {% endblock %}
