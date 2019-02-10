@@ -5,16 +5,17 @@
 {% endblock %}
 
 {% block body %}
-  <div>턴 : {{ turn }}</div>
-  <div class="grid-container">
-    <img src="{{ left_num.card.image.url }}"/>
-    <img src="{{ center_num.card.image.url }}"/>
-    <img src="{{ right_num.card.image.url }}"/>
-    <img src="{{ left_effect.card.effect.image.url }}"/>
-    <img src="{{ center_effect.card.effect.image.url }}"/>
-    <img src="{{ right_effect.card.effect.image.url }}"/>
-  </div>
+  <body style="height: 100vh;">
+    <div>턴 : {{ turn }}</div>
+    <div class="grid-container">
+      <img style="height: 40vh;" src="{{ left_num.card.image.url }}"/>
+      <img style="height: 40vh;" src="{{ center_num.card.image.url }}"/>
+      <img style="height: 40vh;" src="{{ right_num.card.image.url }}"/>
+      <img style="height: 40vh;" src="{{ left_effect.card.effect.image.url }}"/>
+      <img style="height: 40vh;" src="{{ center_effect.card.effect.image.url }}"/>
+      <img style="height: 40vh;" src="{{ right_effect.card.effect.image.url }}"/>
+    </div>
+  </body>
 {% endblock %}
-
 {% block javascript %}
 {% endblock %}
