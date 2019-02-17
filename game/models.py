@@ -1,7 +1,6 @@
 from django.db import models
 # TODO: media url을 지역 설정으로 변경한다.
-from django.conf.global_settings import MEDIA_URL
-from functools import partial
+from welcometo.settings import STATIC_URL
 from game.tools import combine_file_path
 
 
@@ -10,6 +9,7 @@ class ImageMixin(models.Model):
 
     class Meta:
         abstract = True
+        
     @property
     def image_url(self):
         return "{path}{classname}/{id}.jpg".format(path=STATIC_URL, classname=self.__class__.__name__, id=self.pk)
