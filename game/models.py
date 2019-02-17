@@ -10,6 +10,9 @@ class ImageMixin(models.Model):
 
     class Meta:
         abstract = True
+    @property
+    def image_url(self):
+        return "{path}{classname}/{id}.jpg".format(path=STATIC_URL, classname=self.__class__.__name__, id=self.pk)
 
 
 class NumberClass(models.Model):
