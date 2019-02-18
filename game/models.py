@@ -5,8 +5,6 @@ from game.tools import combine_file_path
 
 
 class ImageMixin(models.Model):
-    image = models.ImageField(blank=True, null=True, default=None, upload_to=combine_file_path)
-
     class Meta:
         abstract = True
 
